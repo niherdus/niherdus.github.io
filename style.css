@@ -1,12 +1,15 @@
 :root{
-    --color-dark: #6d6d6f; 
-    --color-red: #ac2720;
+    --color-dark: #0a0a0a; 
+    --color-red: #7f211c;
     --font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
+    --font-size: 14px;
 }
 *{
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
+    color: var(--color-dark);
+    
 }
 
 /* MOBILE */
@@ -16,13 +19,15 @@
         width: 100%;
         max-width: 768px;
         background: url(img/bg_mob.jpg) no-repeat;
+        font-size: var(--font-size);
     }
     header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin: 0 5px;
         align-items: flex-end;
         height: 70px;
-        
+       
     }
     .logo img{
         width: 50px;
@@ -35,8 +40,13 @@
     }
     .title{
         margin-top: 5px;
-       
         text-align: center;
+        
+    }
+    .title span{
+        color: var(--color-red);
+        font-weight: 600;
+        font-size: 13px;
     }
     .iconService img{
         width: 35px
@@ -44,11 +54,11 @@
     .service{
         display: flex;
         flex-direction: column;
+        margin: 10px 0;
     }
     .blockServices{
         display: block;
         text-align: center;
-        font-size: 15px;  
         white-space: wrap; 
         
     }
@@ -57,34 +67,54 @@
         margin-top: 5px;
     }
 
+    .projects{
+        margin: 20px 0;
+    }
+    .projects h3{
+        text-align: center;
+        color: var(--color-red);
+    }
     .projects img{
         width: 100px;
-        
     }
 
     .firstBlockProj,.secondBlockProj{
         display: flex;
         justify-content: space-around;
-       margin: 15px 0;
+        margin: 5px 0;
     }
+    footer{
+        margin: 5px;
+        
+    }
+    footer h3{
+        text-align: center;
+        margin: 10px 0;
+        color: var(--color-red);
+    }
+    .contactSection{
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 
 /* TABLETS */
-@media (min-width: 768px) and (max-width: 1022px){
+@media (min-width: 768px) and (max-width: 1000px){
     .container{
         width: 768px;
         margin: 0 auto;
         height: 3270px;
         background: url(img/bg.jpg) no-repeat 50% 0;
-        
+        border: 1px solid grey;
     }
     header{
         display: flex;
         justify-content: space-between;
         align-items:flex-end;
         height: 70px;
-        font-size: 22px;
-        
+       
+        border: 1px solid grey;
     }
     .logo img{
         width: 220px;
@@ -97,25 +127,25 @@
     }
     .title{
         text-align: center;
-    }
+    } 
 }
+
 /* DESKTOP */
-@media  (min-width: 1022px){
+@media  (min-width: 1000px){
     
     .container{
         width: 768px;
         margin: 0 auto;
-        height: 3270px;
-        
-        background: url(img/bg2.jpg);
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+       
     }
     header{
         display: flex;
         justify-content: space-between;
         align-items:flex-end;
         height: 70px;
-        font-size: 16px;
-        
+        font-size: var(--font-size);
     }
     .logo img{
         width: 220px;
@@ -127,32 +157,101 @@
         height: 100%;      
     }
     .title{
-        font-size: 20px;
+        font-size:21px;
         text-align: center;
-        margin: 20px 0;
+        margin: 10px 0;
     }
+     .title span{
+        color: var(--color-red);
+     }
 
+
+    .service{
+        margin: 20px 0 40px 0;
+        font-size: var(--font-size);
+    }
     .iconService img{
         width: 35px;
-        margin: 0 20px ;
+        margin: 20px 0 0 0;
     }
     .blockService{
         text-align: center;
-        font-size: 15px; 
-        margin: 20px 0;
-        padding: 0 15px;
+        margin: 10px 0;
     }
-    .secondBlockServices{
-        width: 80%;
+    .blockServices{
+        margin-bottom: 20px;
+    }
+    .firstBlockServices{
+        display: flex;
+        justify-content: space-around;
+    }
+    .firstBlockServices .analysis,
+    .firstBlockServices .money,
+    .firstBlockServices .transport{
+        width: 200px; 
+    }
+    .firstBlockServices .money .textService{
+        width: 170px;
         margin: 0 auto;
     }
+    .firstBlockServices .transport .textService{
+        width: 144px;
+        margin: 0 auto;  
+    }
+
+
+    .secondBlockServices .list{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .secondBlockServices .docs{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .secondBlockServices .personal{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .secondBlockServices .providers{
+        width: 250px;
+        margin: 0 auto;
+        
+    }
+    .secondBlockServices-item{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
     
     .projects{
         display: block;
+        margin: 30px 0;
     }
-   
+    .blockProj{
+        margin: 20px 0;
+    }
+    .projects h3{
+        text-align: center;
+        margin: 20px 0;
+        color:var(--color-red);
+    }
     .blockProj{
         display: flex;
         justify-content: space-around;
+    }
+
+    footer{
+        margin: 40px 0;
+    }
+    footer h3{
+        
+        text-align: center;
+        color:var(--color-red);
+    }
+    .contactSection{
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 0;
     }
 }
