@@ -35,7 +35,7 @@
     }
     .title{
         margin-top: 5px;
-        font-size: 17px;
+       
         text-align: center;
     }
     .iconService img{
@@ -45,15 +45,27 @@
         display: flex;
         flex-direction: column;
     }
-    .blockServices:nth-child(1){
+    .blockServices{
         display: block;
         text-align: center;
         font-size: 15px;  
-        white-space: wrap;  
+        white-space: wrap; 
+        
     }
-    .blockServices:nth-child(2){
-        display: block;
-        text-align: center;
+    .blockService{
+        padding: 0 5px; 
+        margin-top: 5px;
+    }
+
+    .projects img{
+        width: 100px;
+        
+    }
+
+    .firstBlockProj,.secondBlockProj{
+        display: flex;
+        justify-content: space-around;
+       margin: 15px 0;
     }
 }
 
@@ -84,15 +96,12 @@
         height: 100%;      
     }
     .title{
-        font-size: 28px;
         text-align: center;
     }
 }
 /* DESKTOP */
 @media  (min-width: 1022px){
-    br {
-        display: none;
-    }
+    
     .container{
         width: 768px;
         margin: 0 auto;
@@ -128,17 +137,15 @@
         margin: 0 20px ;
     }
     .blockService{
-        display: flex;
-        text-align: start;
+        text-align: center;
         font-size: 15px; 
         margin: 20px 0;
+        padding: 0 15px;
     }
-    .textService{
-       display: flex;
-       align-items: center;
-       line-height: 1.3;
+    .secondBlockServices{
+        width: 80%;
+        margin: 0 auto;
     }
-     
     
     .projects{
         display: block;
