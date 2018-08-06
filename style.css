@@ -2,7 +2,7 @@
     --color-dark: #6d6d6f; 
     --color-red: #8e1f19;
     --font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
-    --font-size: 14px;
+    --font-size: 15px;
 }
 *{
     font-family: var(--font-family);
@@ -24,6 +24,7 @@ hr{
 
 .siteLink{
     text-decoration: underline;
+    color: var(--color-red)
 }
 
 /* MOBILE */
@@ -46,9 +47,9 @@ hr{
     }
     .phone{
         margin: 0 5px 5px 0;
-        font-size: var(--font-size);
+        font-size: 14px;
         text-align: center;
-        font-size: var(--font-size);
+       
     }
     .mainPicture img{
         min-width: 300px;
@@ -59,13 +60,12 @@ hr{
 
 /* TITLE */
     .title{
+        font-size: 14px;
         margin: 5px 0;
         text-align: center;
     }
     .title span{
-        color: var(--color-red);
-       
-        
+        color: var(--color-red);        
     }
 
 /* SERVICE */    
@@ -175,12 +175,12 @@ hr{
         margin: 10px auto;
         box-shadow:  0 0 10px  rgba(0, 0, 0, 0.313);
         background: white;
+        font-size: var(--font-size);
     }
     header{
         display: flex;
         justify-content: space-between;
-        align-items:flex-end;
-        font-size: var(--font-size);
+        align-items:flex-end;   
     }
     .logo img{ 
         width:130px; 
@@ -198,7 +198,7 @@ hr{
         height: 100%;    
     }
     .title{
-        font-size:21px;
+        font-size:19px;
         text-align: center;
         margin: 10px 0;
     }
@@ -209,7 +209,6 @@ hr{
 
     .service{
         margin: 20px 0 40px 0;
-        font-size: var(--font-size);
     }
     .iconService img{
         width: 35px;
@@ -276,6 +275,7 @@ hr{
         text-align: center;
         margin: 20px 0;
         color:var(--color-red);
+        font-size: 19px;
     }
     .blockProj{
         display: flex;
@@ -283,17 +283,17 @@ hr{
     }
 
     footer{
-        margin: 40px 0;
+     padding-top: 20px;
     }
     footer h3{
-        
+        font-size: 19px;
         text-align: center;
         color:var(--color-red);
     }
     .contactSection{
         display: flex;
         justify-content: space-around;
-        padding: 40px 0;
+        padding: 30px 0;
     }
     
 }
