@@ -35,6 +35,7 @@ hr{
         height: 100%;
         max-width: 768px;
         font-size:14px;
+        background: url(img/bg_mob.jpg);
     }
     
 /* HEDER */
@@ -143,6 +144,7 @@ hr{
         height: 100%;
         max-width: 768px;
         font-size: var(--font-size-mob);
+        background: url(img/bg_mob.jpg);
     }
     
 /* HEDER */
@@ -170,7 +172,7 @@ hr{
 
 /* TITLE */
     .title{
-        font-size: var(--font-size);
+        font-size: var(--font-size-mob);
         margin: 5px 0;
         text-align: center;
     }
@@ -289,6 +291,7 @@ hr{
     }
      .title span{
         color: var(--color-red);
+        
      }
 
 
