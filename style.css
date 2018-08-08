@@ -37,18 +37,13 @@ hr{
         width: 100%;
         height: 100%;
         max-width: 768px;
-        font-size:14px;
+        font-size:16px;
         background: url(img/bg_mob.jpg);
     }
     
 /* HEDER */
     header{
-        display: flex;
-        justify-content: space-between;
         margin: 0 5px;
-        align-items: flex-end;
-        height: 70px;
-        font-size: var(--font-size);
     }
     .phone{
         float: right;
@@ -67,7 +62,7 @@ hr{
 
 /* TITLE */
     .title{
-        font-size: 14px;;
+        font-size: 15px;
         margin: 5px 0;
         text-align: center;
     }
@@ -132,10 +127,8 @@ hr{
         margin: 10px 0;
         color: var(--color-red);
     }
-    .contactSection{
-        display: flex;
-        justify-content: space-around;
-        
+    .contactSection .adres{
+        float: left;        
     }
 }
 
