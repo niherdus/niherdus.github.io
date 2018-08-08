@@ -48,6 +48,7 @@ hr{
         font-size: var(--font-size);
     }
     .phone{
+        float: right;
         margin: 0 5px 5px 0;
         text-align: center;       
     }
