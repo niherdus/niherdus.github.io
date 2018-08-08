@@ -13,6 +13,9 @@
     color: var(--color-dark);
     text-decoration: none;
 }
+a:visited{
+    color: #8e1f19;
+}
 
 hr{
     margin: 0 15px;
@@ -26,7 +29,7 @@ hr{
 
 .siteLink{
     text-decoration: underline;
-    color: var(--color-red)
+    color:  #8e1f19;
 }
 @media (max-width: 325px){
     .container{
@@ -69,7 +72,7 @@ hr{
         text-align: center;
     }
     .title span{
-        color: var(--color-red);        
+        color: #8e1f19;        
     }
 
 /* SERVICE */    
@@ -136,7 +139,6 @@ hr{
     }
 }
 
-
 /* MOBILE */
 @media (min-width: 325px) and (max-width: 1000px) {
     .container{
@@ -156,6 +158,7 @@ hr{
         align-items: flex-end;
         height: 70px;
         font-size: var(--font-size);
+        background-color: #fff;
     }
     .phone{
         margin: 0 5px 5px 0;
